@@ -550,11 +550,6 @@
             font-size: 16px;
         }
 
-        .skill-percent {
-            color: var(--accent);
-            font-weight: 600;
-        }
-
         .skill-bar {
             height: 8px;
             background: rgba(255, 255, 255, 0.1);
@@ -683,6 +678,16 @@
         .project-emoji {
             font-size: 40px;
             margin-bottom: 20px;
+        }
+
+        .project-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+            margin: -30px -30px 25px;
+            width: calc(100% + 60px);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .project-title {
@@ -1171,7 +1176,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Full-Stack Web Development</span>
-                            <span class="skill-percent">90%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="90"></div>
@@ -1180,7 +1184,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Enterprise Software Development</span>
-                            <span class="skill-percent">85%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="85"></div>
@@ -1189,7 +1192,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">DevOps & Cloud Infrastructure</span>
-                            <span class="skill-percent">85%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="85"></div>
@@ -1198,7 +1200,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Mobile Application Development</span>
-                            <span class="skill-percent">85%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="85"></div>
@@ -1209,7 +1210,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Backend Systems & APIs</span>
-                            <span class="skill-percent">90%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="90"></div>
@@ -1218,7 +1218,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Database Management & SQL</span>
-                            <span class="skill-percent">85%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="85"></div>
@@ -1227,7 +1226,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Linux & Infrastructure Monitoring</span>
-                            <span class="skill-percent">80%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="80"></div>
@@ -1236,7 +1234,6 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span class="skill-name">Quality Assurance & Testing</span>
-                            <span class="skill-percent">80%</span>
                         </div>
                         <div class="skill-bar">
                             <div class="skill-progress" data-progress="80"></div>
@@ -1288,7 +1285,7 @@
             <div class="projects-grid">
                 <a href="https://github.com/T-Jayasinghe/mpma-erp-system.git" target="_blank" rel="noopener noreferrer" class="project-link">
                     <div class="project-card">
-                        <div class="project-emoji">🏢</div>
+                        <img class="project-image" src="images/erp-management.png" alt="ERP Management System project preview">
                         <h3 class="project-title">ERP Management System</h3>
                         <p class="project-desc">Contributing to enterprise resource planning system development. Building frontend and backend modules supporting business workflows with scalable architecture and REST APIs integration.</p>
                         <div class="project-tags">
@@ -1304,7 +1301,7 @@
 
                 <a href="https://github.com/mohomad-ahnaf/server-monitoring-system.git" target="_blank" rel="noopener noreferrer" class="project-link">
                     <div class="project-card">
-                        <div class="project-emoji">📊</div>
+                        <img class="project-image" src="images/server-monitoring.png" alt="Server Monitoring System project preview">
                         <h3 class="project-title">Server Monitoring System</h3>
                         <p class="project-desc">Linux-based infrastructure monitoring platform with real-time dashboards and automated alerting. Monitors CPU, memory, disk, processes, and system logs with Docker containerized deployment.</p>
                         <div class="project-tags">
@@ -1319,7 +1316,7 @@
                 </a>
                 <a href="https://github.com/mohomad-ahnaf/Fixitnow_DevOps" target="_blank" rel="noopener noreferrer" class="project-link">
                     <div class="project-card">
-                        <div class="project-emoji">🔧</div>
+                        <img class="project-image" src="images/fixitnow.png" alt="FixItNow project preview">
                         <h3 class="project-title">FixItNow</h3>
                         <p class="project-desc">Home maintenance service platform with Flutter mobile app and web platform for booking services like electricians and plumbers. Deployed on AWS with complete DevOps pipeline.</p>
                         <div class="project-tags">
@@ -1335,7 +1332,7 @@
 
                 <a href="https://github.com/saheer-ASM/Software-Group-Project-Bibliometric-Data-Collection" target="_blank" rel="noopener noreferrer" class="project-link">
                     <div class="project-card">
-                        <div class="project-emoji">📊</div>
+                        <img class="project-image" src="images/bibliometric.png" alt="Bibliometric Data Collection project preview">
                         <h3 class="project-title">Bibliometric Data Collection</h3>
                         <p class="project-desc">Web system processing research data for 100,000+ researchers with ML classification model. Automated data pipelines for bibliometric analysis and publication categorization.</p>
                         <div class="project-tags">
@@ -1351,7 +1348,7 @@
 
                 <a href="https://github.com/mohomad-ahnaf/Smart-Grocery-Shop" target="_blank" rel="noopener noreferrer" class="project-link">
                     <div class="project-card">
-                        <div class="project-emoji">🛒</div>
+                        <img class="project-image" src="images/smart-grocery.png" alt="Smart Grocery Shop POS project preview">
                         <h3 class="project-title">Smart Grocery Shop POS</h3>
                         <p class="project-desc">Desktop point-of-sale system with billing, inventory management, and product categorization. Reduced checkout processing time by ~30% with optimized database operations.</p>
                         <div class="project-tags">
@@ -1359,6 +1356,21 @@
                             <span class="tag">WPF</span>
                             <span class="tag">SQLite</span>
                             <span class="tag">EF Core</span>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="https://github.com/mohomad-ahnaf/The-Rising-Fountain" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <div class="project-card">
+                        <img class="project-image" src="images/rising-fountain.png" alt="The Rising Fountain project preview">
+                        <h3 class="project-title">The Rising Fountain</h3>
+                        <p class="project-desc">Interactive audio-responsive water installation synchronizing fountain patterns with live audio input. Demonstrated at University Rextro 2025, engaging 500+ attendees with real-time pattern generation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">Embedded C</span>
+                            <span class="tag">Sensors</span>
+                            <span class="tag">Actuators</span>
                         </div>
                     </div>
                 </a>
@@ -1378,19 +1390,6 @@
                     </div>
                 </a>
 
-                <a href="https://github.com/mohomad-ahnaf/The-Rising-Fountain" target="_blank" rel="noopener noreferrer" class="project-link">
-                    <div class="project-card">
-                        <div class="project-emoji">💧</div>
-                        <h3 class="project-title">The Rising Fountain</h3>
-                        <p class="project-desc">Interactive audio-responsive water installation synchronizing fountain patterns with live audio input. Demonstrated at University Rextro 2025, engaging 500+ attendees with real-time pattern generation.</p>
-                        <div class="project-tags">
-                            <span class="tag">Arduino</span>
-                            <span class="tag">Embedded C</span>
-                            <span class="tag">Sensors</span>
-                            <span class="tag">Actuators</span>
-                        </div>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
